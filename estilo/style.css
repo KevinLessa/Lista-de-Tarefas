@@ -1,0 +1,115 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    font-family: "Poppins", sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color: #9493A4;
+    font-size: 16px;
+    margin: 0px;
+    min-height: 100vh;
+    width: 100%;
+}
+
+header{
+    background-image: linear-gradient(to bottom, #7839BE, #45304F);
+    margin: 0px;
+}
+
+h1#site{
+    text-align: center;
+    color: #71C1C8;
+    margin: 0px;
+    font-size: 3em;
+}
+
+nav{
+    background-color: #45304F;
+    padding: 0px 0px 5px 25px;
+    box-shadow: 0px 10px 15px #241e4180; ;
+}
+
+button.filtro{
+    background-color: #45304F;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 1px 10px;
+}
+
+button.filtro:hover{
+    background-color: #71C1C8;
+}
+
+form{
+    min-width: 400px;
+    max-width: 600px;
+    height: 715px;
+    max-height: 715px;
+    background-color: white;
+    margin: auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 15px #241e4180;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+h1{
+    text-align: center;
+}
+
+input{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 30px 0px;   
+    outline: none;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+input::placeholder{
+    color: #9493A4;
+}
+
+button#confirm{
+    width: 100%;
+    height: 50px;
+    background-color: white;
+    border: none;
+    border-radius: 30px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #333;
+    box-shadow: 10px 10px 15px #241e4180;
+}
+
+button#confirm:hover{
+    background-color: transparent;
+    cursor: pointer;
+    border: 2px solid #7c58ac52;
+    color: rgb(0, 0, 0);
+    transition: 0.5s;
+}
+
+footer{
+    background-color: #45304F;
+    margin: 0px;
+    padding: 1px;
+}
+
+footer> p{
+    margin: 0px;
+}
+
+p#rodape{
+    text-align: center;
+    color: #71C1C8;
+    font-size: 16px;
+}
