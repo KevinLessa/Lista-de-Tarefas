@@ -7,12 +7,13 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 :root{
     --cor1:#1c3142;
-    --cor2:#1c2542;
-    --cor3:#1f1c42;
+    --cor2:rgb(28, 37, 66);
+    --cor3:rgb(35, 42, 66);
     --cor4:#000829;
     --cor5:#dffcf2;
 }
@@ -24,35 +25,35 @@ body{
 }
 
 section{
-    width: 100%;
     height: 100vh;
     display: flex;
-    flex-direction: column;
 }
 
 /*header*/
 header{
     display: flex;
     background-color: transparent;
-    width: 100%;
+    width: 100vw;
     justify-content: space-between;
     align-items: center;
     position: fixed;
 }
 
 h1#site{
-    padding: 0em 0.5em;
+    padding: 0.5vh 2vw;
     color: var(--cor5);
-    font-size: 2em;
+    font-size: 2vh;
 }
 
 ul{
     padding: 10px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 li{
-    display: table-cell;
-    position: relative;
+    list-style: none;
 }
 
 li > a{
@@ -103,22 +104,23 @@ div#image{
 }
 
 h2#homeH2{
-    font-size: 6vw;
+    font-size: 6vh;
     font-weight: bolder;
     color: var(--cor5);
+    text-align: center;
 }
 
 p#subTítulo{
     text-align: center;
-    font-size: 1.5em;
+    font-size: 2.5vh;
     font-weight: lighter;
     color: var(--cor5);
     margin-bottom: 40px;
 }
 
 button.ovalButton{
-    width: 600px;
-    height: 50px;
+    width: 30vw;
+    height: 5vh;
     background-color: var(--cor5);
     border: none;
     border-radius: 30px;
@@ -140,54 +142,104 @@ button.ovalButton:hover{
 
 /*section2*/
 section#serviços{
-    background-color: var(--cor3);
+    background-color: var(--cor2);
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+}
+
+h2#serviçosH2{
+    font-size: 6vh;
+    margin-bottom: 4vh;
+}
+
+.divCards{
+    display: flex;
+    width: 80vw;
+    gap: 3vw;
+    flex-wrap: wrap;
+}
+
+.card{
+    background-color: var(--cor3);
+    padding: 20px;
+    border-radius: 20px;
+    flex: 1;
+}
+
+h3{
+    text-align: center;
+    margin-bottom: 1vh;
 }
 
 /*section3*/
+
+section#listas{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 form{
-    min-width: 400px;
-    max-width: 900px;
-    height: 706px;
-    max-height: 716px;
+    height: 20vh;
+    width: 80vw;
     background-color: transparent;
-    margin: auto;
-    padding: 20px;
+    padding: 30px;
     border-radius: 10px;
     box-shadow: 0px 10px 15px var(--cor4);
-    margin-top: 40px;
-    margin-bottom: 40px;
+    position: relative;
+}
+
+h2#listasH2{
+    text-align: center;
+    margin-bottom: 3vh;
+    font-size: 2em;
 }
 
 input{
-    width: 860px;
+    width: 80%;
     height: 50px;
     padding: 0px 20px;   
     outline: none;
     border: 1px solid var(--cor5);
-    border-radius: 30px;
+    border-radius: 15px;
     font-size: 16px;
-    background-color: var(--cor2);
+    background-color: var(--cor3);
     color: var(--cor5);
-    margin-bottom: 100px;
 }
 
 input::placeholder{
     color: var(--cor5);
 }
 
-/*
+#add{
+    height: 50px;
+    background-color: var(--cor3);
+    color: var(--cor5);
+    border-radius: 15px;
+    cursor: pointer;
+    border: 1px solid var(--cor5);
+}
+
+#add:hover{
+    background-color: var(--cor5);
+    color: var(--cor2);
+    border: 1px solid var(--cor2);
+    font-weight: bold;
+}
+
 button.filtro{
-    background-color: #45304F;
-    color: white;
-    border-radius: 5px;
+    background-color: var(--cor2);
+    color: var(--cor5);
+    border-radius: 15px;
     cursor: pointer;
     padding: 1px 10px;
+    border: 1px solid var(--cor5);
 }
 
 button.filtro:hover{
-    background-color: #71C1C8;
+    background-color: var(--cor5);
+    color: var(--cor2);
 }
-*/
+
 

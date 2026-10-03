@@ -11,13 +11,13 @@
     <header>
         <h1 id="site">Plan Maker</h1>
         <ul> 
-            <li><a href="#">Home</a></li>
+            <li><a href="#home">Home</a></li>
             
-            <li><a href="#">Serviços</a></li>
+            <li><a href="#serviços">Serviços</a></li>
           
-            <li><a href="#">Criar</a></li>
+            <li><a href="#listas">Listas</a></li>
             
-            <li><a href="#">Contato</a></li>
+            <li><a href="#contato">Contato</a></li>
         </ul>
     </header>
     
@@ -25,7 +25,10 @@
         <div id="image">
             <h2 id="homeH2">PLANEJE SUAS TAREFAS</h2> 
             <p id="subTítulo">CRIE LISTAS DE TAREFAS PERSONALIZADAS, DEFINA PRIORIDADES, ESTILOS E FILTROS, COM FACILIDADE E EFICIÊNCIA</p>
-            <button id="Criar" class="ovalButton">Criar Agora</button>
+            <a href="#listas">
+            <button id="Criar" class="ovalButton" href="#listas"
+            >Criar Agora</button>
+            </a>
         </div>
     </section>
 
@@ -41,21 +44,29 @@
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi, perspiciatis illum nam quas officiis ducimus. Deleniti odio minus fugiat, ea reiciendis nulla culpa officiis totam illum natus beatae, expedita doloremque?</p>
             </div>
             <div class="card">
-                <h3>De Prioridade</h2>
+                <h3>Siga Suas Prioridade</h2>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi, perspiciatis illum nam quas officiis ducimus. Deleniti odio minus fugiat, ea reiciendis nulla culpa officiis totam illum natus beatae, expedita doloremque?</p>
             </div>
         </div>
     </section>
 
     <section id="listas">
-    <form>
-        <h2 id="listasH2">Minhas Tarefas</h1>
-        <input placeholder="Nova Lista de Tarefas" required> 
-        <button id="confirm" class="ovalButton">Acessar Lista</button>
-    </form>
+        <form>
+            <h2 id="listasH2">Minhas Tarefas</h1>
+            <input placeholder="Nova Lista de Tarefas" required> 
+            <button id="add">Adicionar</button>
+        
+        <nav id="filtros">
+            <button data-filtro="todas" class="filtro">Todas</button>
+            <button data-filtro="pendentes" class="filtro">Pendedntes</button>
+            <button data-filtro="feitas" class="filtro">Feitas</button>
+        </nav>
+        </form>
+        <ul id="list"></ul>
+    
     </section>
 
-    <section id="Contato">
+    <section id="contato">
         <h2 id="contatoH2">Kevin Lessa</h2>
     </section>
 
