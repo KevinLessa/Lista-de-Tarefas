@@ -6,6 +6,7 @@
     <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
     <title>Minhas tarefas</title>
     <link rel="stylesheet" href="estilo/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
     <header>
@@ -25,10 +26,7 @@
         <div id="image">
             <h2 id="homeH2">PLANEJE SUAS TAREFAS</h2> 
             <p id="subTítulo">CRIE LISTAS DE TAREFAS PERSONALIZADAS, DEFINA PRIORIDADES, ESTILOS E FILTROS, COM FACILIDADE E EFICIÊNCIA</p>
-            <a href="#listas">
-            <button id="Criar" class="ovalButton" href="#listas"
-            >Criar Agora</button>
-            </a>
+            <a href="#listas" id="Criar" class="ovalButton"> Criar Agora</a>
         </div>
     </section>
 
@@ -36,39 +34,59 @@
         <h2 id="serviçosH2">Serviços</h2>
         <div class="divCards">
             <div class="card">
-                <h3>Planeje mais Rapido</h2>
+                <h3>Planeje mais Rapido</h3>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi, perspiciatis illum nam quas officiis ducimus. Deleniti odio minus fugiat, ea reiciendis nulla culpa officiis totam illum natus beatae, expedita doloremque?</p>
             </div>
             <div class="card">
-                <h3>Personalize</h2>
+                <h3>Personalize</h3>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi, perspiciatis illum nam quas officiis ducimus. Deleniti odio minus fugiat, ea reiciendis nulla culpa officiis totam illum natus beatae, expedita doloremque?</p>
             </div>
             <div class="card">
-                <h3>Siga Suas Prioridade</h2>
+                <h3>Siga Suas Prioridade</h3>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi, perspiciatis illum nam quas officiis ducimus. Deleniti odio minus fugiat, ea reiciendis nulla culpa officiis totam illum natus beatae, expedita doloremque?</p>
             </div>
         </div>
     </section>
 
     <section id="listas">
-        <form>
-            <h2 id="listasH2">Minhas Tarefas</h1>
-            <input placeholder="Nova Lista de Tarefas" required> 
-            <button id="add">Adicionar</button>
-        
-        <nav id="filtros">
-            <button data-filtro="todas" class="filtro">Todas</button>
-            <button data-filtro="pendentes" class="filtro">Pendedntes</button>
-            <button data-filtro="feitas" class="filtro">Feitas</button>
-        </nav>
-        </form>
-        <ul id="list"></ul>
-    
+        <div id="listaBox">
+            <form id="form">
+                <h2 id="listasH2">Minhas Tarefas</h2>
+                <div id="inputDiv">
+                    <input id="campo" placeholder="Nova Lista de Tarefas" required>
+                    <button id="add">Adicionar</button>
+                </div>
+            </form>
+
+            <nav id="idFiltro">
+                <button data-filtro="todas" class="filtro" >Todas</button>
+                <button data-filtro="pendentes" class="filtro" >Pendedntes</button>
+                <button data-filtro="feitas" class="filtro" >Feitas</button>
+            </nav>
+
+            <ul id="list"></ul>
+        </div>
     </section>
 
-    <section id="contato">
-        <h2 id="contatoH2">Kevin Lessa</h2>
-    </section>
-
+    <footer id="contato">
+        <div id="contatoBox">
+           <h2 id="contatoH2">Entre em contato:</h2>
+            <div class="linksContato">
+                <a href="kevinlessadev@gmail.com" class="linkContato">
+                <i class="fa-solid fa-envelope"></i>
+                kevinlessadev@gmail.com
+                </a>
+                <a href="https://github.com/KevinLessa" class="linkContato">
+                <i class="fa-brands fa-github"></i>
+                github.com/KevinLessa
+                </a>
+                <a href="https://www.instagram.com/kevin_lessa_/" class="linkContato">
+                <i class="fa-brands fa-instagram"></i>
+                @kevin_lessa_
+                </a>
+            </div>
+        </div>
+    </footer>
+    <script src="app.js"></script>
 </body>
 </html>
